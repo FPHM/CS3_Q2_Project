@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+            body{
+                font-family: 'Montserrat',serif;
+                background-color: #050505;
+                color: white;
+                margin: 0;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            #header{
+                color: black;
+                height: 39px;
+            }
+            #header-left{
+                background-color: aqua;
+                float: left;
+            }
+            #header-right{
+                background-color: rgba(0,255,255,0.25);
+                color: white;
+                float: left;
+                padding: 0 5px;
+            }
+            #navbar{
+                background-color: #111111;
+                border: 1px solid black;
+                margin-bottom: 10px;
+            }
+            #navbar td{
+                padding: 10px;
+                transition-duration: 0.2s;
+            }
+            #navbar td:hover{
+                background-color: aqua;
+            }
+            #navbar a{
+                height: 100%;
+            }
+            #sidenav{
+                height: 500px;
+                background-color: rgba(0,255,255,0.25);
+                color: black;
+                text-align: center;
+                line-height: 1.5;
+                position: inherit;
+                border: 1px solid aqua;
+                float: left;
+            }
+            #sidenav table{
+                width: 100%;
+                border-top: 0;
+                border-bottom: 0;
+                border-spacing: 5px 50px;
+            }
+            #sidenav td{
+                text-align: center;
+                background-color: aqua;
+                border: 1px solid black;
+                transition-duration: 0.2s;
+            }
+            #sidenav td:hover{
+                background-color: white;
+            }
+            #sidenav td a:link{
+                color: black;
+                text-decoration: none;
+            }
+            #sidenav td a:hover{
+                color: black;
+                text-decoration: none;
+            }
+            #sidenav td a:visited{
+                color: black;
+                text-decoration: none;
+            }
+            #placeholder{
+                height: 1px;
+                float: left;
+            }
+            #essay{
+                text-align: center;
+                line-height: 1.5;
+                float: left;
+            }
+            #essay h1{
+                margin-bottom: 10px;
+                color: aqua;
+            }
+            #essay p{
+                padding: 10px;
+            }
+            #essay .body{
+                margin-right: 10px;
+                margin-left: 10px;
+                background-color: white;
+                color: black;
+                text-align: justify;
+                text-indent: 50px;
+                border: 1px dashed aqua;
+            }
+            #essayabout{
+                text-align: center;
+                line-height: 1.5;
+                color: greenyellow;
+                border-left: 1px solid lawngreen;
+                border-top: 1px solid lawngreen;
+                border-bottom: 1px solid lawngreen;
+                background-color: rgba(0,255,0,0.1);
+                float: right;
+                height: auto;
+            }
+            #essayabout h1{
+                margin-bottom: 10px;
+            }
+            #essayabout p{
+                padding: 10px;
+            }
+            #essayabout .amorespecificname{
+                margin-right: 10px;
+                margin-left: 10px;
+                color: white;
+                text-align: justify;
+            }
+            #body:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            #footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: aqua;
+                text-align: center;
+                margin-top: 5px;
+            }
+            #footer a{
+                float: left;
+                padding: 5px;
+                transition-duration: 0.2s;
+            }
+            #footer a:hover{
+                background-color: black;
+            }
+
+            /* Clear floats after the columns */
+            #body:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            [class*="col-"] {
+                /* For mobile phones: */
+                width: 100%;
+            }
+            @media only screen and (min-width: 768px) {
+                /* For desktop: */
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+                #sidenav{
+                    height: 500px;
+                    background-color: rgba(0,255,255,0.25);
+                    color: black;
+                    text-align: center;
+                    line-height: 1.5;
+                    position: fixed;
+                    border: 1px solid aqua;
+                    float: left;
+                }
+
+                #essayabout{
+                    float: right;
+                    width: 20%;
+                }
+                #sidenav{
+                    width: 20%;
+                    margin-left: 1%
+                }
+            }
+        </style>
+        <title>The Brilliance of Time-sense | EssayHub: The Free Essayclopedia</title>
+    </head>
+    <body>
+    <div id="header">
+        <div id="header-left" class="col-8">
+            <h1 style="display: inline">EssayHub</h1>
+            <p style="display: inline">the free essayclopedia</p>
+        </div>
+        <div id="header-right" class="col-4">
+            <h1 style="display: inline">Essays</h1>
+        </div>
+    </div>
+    <div id="navbar" class="col-12">
+        <table>
+            <tr>
+                <td class="home">
+                    <a href="index.html">Home</a>
+                </td>
+                <td class="essays">
+                    <a href="content.html">Essays</a>
+                </td>
+                <td class="other">
+                    <a href="other.html">Other</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="body">
+        <div id="sidenav" class="col-3">
+            <table>
+                <tbody>
+                <tr>
+                    <td>
+                        <a href="content.html">
+                            <h1>Essay 1</h1>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td style="background-color: white">
+                        <a href="content2.html">
+                            <h1>Essay 2</h1>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="content3.html">
+                            <h1>Essay 3</h1>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="placeholder" class="col-3"></div>
+        <div id="essay" class="col-6">
+            <table>
+                <tr>
+                    <td>
+                        <h1>The Brilliance of Time-sense: A Reaction Paper on “Time and the Machine” by Aldous Huxley</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="body">
+                        <p>“Time is our tyrant.” Aldous Huxley’s Time and the Machine tackles on the topic of time and how it is a recent invention hardly older than the United States. Huxley states that the modern time-sense was invented or appeared at the time when businesses and factories were starting to gain traction. He also says that the division of a day into 24 hours, the division of those hours into minutes and so on had made citizens more aware of what the time currently is; Even making an example of how a specific time (8:17 AM) could be very important to some people. He goes on to say that this current method of timekeeping was way different than back then when people still used broader terms such as morning, afternoon, and evening.</p>
+                        <p>I believe that time was a “by-product” of sorts created by the quickly rising industries. Its creation was necessary for organization to exist. Time was needed to be divided so people could properly schedule and accurately meet deadlines. If a deadline was set to “sunset” on a specific day, how would you know when exactly that will be? Using the original time-sense of “morning,” “noon,” “afternoon,” and “night” is just a bit too inconsistent, especially at night when there is no way of accurately telling how far sunrise is from the current time. Another example of this is if it was applied to today’s standards of time. If for example: your teacher gave you an assignment and set its deadline to “afternoon,” what exact time is that afternoon? Sure, the original time-sense could still be used for casual conversations like “I’ll do this tonight” but when making schedules like routines and deadlines, it falls flat to the modern time-sense. Because of this, I definitely prefer the modern time-sense because I could manage my time more accurately, like scheduling how I’m gonna finish this essay in tandem with other projects.</p>
+                        <p>The Time and the Machine states that time was a modern invention. It says that the modern time-sense developed alongside industries. It also states that it was needed because a lot of factories and offices are dependent on it and I agree with the statement. In addition to their purpose of getting things done in a certain amount of time, the modern time-sense could also help workers in managing their time efficiently. Using the previous example on this, dividing the day into 24 equal portions proved to be very beneficial to industrialization because of better time management. This means better scheduling of tasks, more accurate deadlines, better timekeeping (e.g. what time you did something), better recording of timespans (e.g. the time it takes for 2 occurrences) and many more. This extends to even the management in the sense that they could control when their workers arrive and leave or as Huxley says, eight-hour days and six-day weeks. Huxley also states that people are always aware of time to the point that they suffer or experience psychological torture whenever they are in a place where people don’t care about seconds, minutes, and hours or just waiting in general.</p>
+                        <p>Comparing the modern time-sense discussed in the previous paragraph to the past, we can infer that with the lack of time division in a day, the past only uses the sun as the basis of time. If the sun was directly overhead, it is noon; before and after that are morning and afternoon respectively and the border between night and day for morning and afternoon are sunrise and sunset. Using another previous example, setting a deadline to “night” doesn’t give an exact time frame on when you should pass it. We can see that this is quite inefficient and inconsistent as the time-frames are too broad, especially at night. Although inefficient, this would not be too much of a disadvantage for an average human in the past. The days after the conception of civilization and before industrialization were rather quite simple and the man was used to doing nothing, compared to the present in which Huxley states that since man is almost always aware of time, emphasizing on that time sense in the form of waiting appears to be psychological torture to the modern Englishman.</p>
+                        <p>Time and the Machine, and in extent Huxley, argues that the modern time-sense was developed to cater to the needs of the factories created by the Industrial Revolution. I learned that the average human back then only had the sun to figure out what time of day it is. The essay expanded on how the modern time-sense made man aware of each tick of the clock, opposite of the past where people could wait for longer periods of time without getting bored. Creating this paper also taught me that the modern time-sense allowed people to schedule their time appropriately, yet here I am, still procrastinating on this very essay and cramming it at the last minute.</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="essayabout" class="col-3">
+            <div class="amorespecificname">
+                <h2 style="color: greenyellow; text-align: center">Fun Facts:</h2>
+                <p>- This essay was passed less than one minute before the deadline</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" class="col-4">Contact Us</a>
+        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" class="col-4">Share this Site</a>
+        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" class="col-4">More Info</a>
+    </div>
+    </body>
+</html>

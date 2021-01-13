@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+        <style>
+            body{
+                font-family: 'Montserrat',serif;
+                background-color: #050505;
+                color: white;
+                margin: 0;
+            }
+            a{
+                text-decoration: none;
+                color: white;
+            }
+            #header{
+                color: black;
+                height: 39px;
+            }
+            #header-left{
+                background-color: aqua;
+                float: left;
+            }
+            #header-right{
+                background-color: rgba(0,255,255,0.25);
+                color: white;
+                float: left;
+                padding: 0 5px;
+            }
+            #navbar{
+                background-color: #111111;
+                border: 1px solid black;
+                margin-bottom: 10px;
+            }
+            #navbar td{
+                padding: 10px;
+                transition-duration: 0.2s;
+            }
+            #navbar td:hover{
+                background-color: aqua;
+            }
+            #navbar a{
+                height: 100%;
+            }
+            #sidenav{
+                height: 500px;
+                background-color: rgba(0,255,255,0.25);
+                color: black;
+                text-align: center;
+                line-height: 1.5;
+                position: inherit;
+                border: 1px solid aqua;
+                float: left;
+            }
+            #sidenav table{
+                width: 100%;
+                border-top: 0;
+                border-bottom: 0;
+                border-spacing: 5px 50px;
+            }
+            #sidenav td{
+                text-align: center;
+                background-color: aqua;
+                border: 1px solid black;
+                transition-duration: 0.2s;
+            }
+            #sidenav td:hover{
+                background-color: white;
+            }
+            #sidenav td a:link{
+                color: black;
+                text-decoration: none;
+            }
+            #sidenav td a:hover{
+                color: black;
+                text-decoration: none;
+            }
+            #sidenav td a:visited{
+                color: black;
+                text-decoration: none;
+            }
+            #placeholder{
+                height: 1px;
+                float: left;
+            }
+            #essay{
+                text-align: center;
+                line-height: 1.5;
+                float: left;
+            }
+            #essay h1{
+                margin-bottom: 10px;
+                color: aqua;
+            }
+            #essay p{
+                padding: 10px;
+            }
+            #essay .body{
+                margin-right: 10px;
+                margin-left: 10px;
+                background-color: white;
+                color: black;
+                text-align: justify;
+                text-indent: 50px;
+                border: 1px dashed aqua;
+            }
+            #essayabout{
+                text-align: center;
+                line-height: 1.5;
+                color: greenyellow;
+                border-left: 1px solid lawngreen;
+                border-top: 1px solid lawngreen;
+                border-bottom: 1px solid lawngreen;
+                background-color: rgba(0,255,0,0.1);
+                float: right;
+                height: auto;
+            }
+            #essayabout h1{
+                margin-bottom: 10px;
+            }
+            #essayabout p{
+                padding: 10px;
+            }
+            #essayabout .amorespecificname{
+                margin-right: 10px;
+                margin-left: 10px;
+                color: white;
+                text-align: justify;
+            }
+            #body:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            #footer{
+                position: fixed;
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                background-color: aqua;
+                text-align: center;
+                margin-top: 5px;
+            }
+            #footer a{
+                float: left;
+                padding: 5px;
+                transition-duration: 0.2s;
+            }
+            #footer a:hover{
+                background-color: black;
+            }
+
+            /* Clear floats after the columns */
+            #body:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+            * {
+                box-sizing: border-box;
+            }
+            [class*="col-"] {
+                /* For mobile phones: */
+                width: 100%;
+            }
+            @media only screen and (min-width: 768px) {
+                /* For desktop: */
+                .col-1 {width: 8.33%;}
+                .col-2 {width: 16.66%;}
+                .col-3 {width: 25%;}
+                .col-4 {width: 33.33%;}
+                .col-5 {width: 41.66%;}
+                .col-6 {width: 50%;}
+                .col-7 {width: 58.33%;}
+                .col-8 {width: 66.66%;}
+                .col-9 {width: 75%;}
+                .col-10 {width: 83.33%;}
+                .col-11 {width: 91.66%;}
+                .col-12 {width: 100%;}
+                #sidenav{
+                    height: 500px;
+                    background-color: rgba(0,255,255,0.25);
+                    color: black;
+                    text-align: center;
+                    line-height: 1.5;
+                    position: fixed;
+                    border: 1px solid aqua;
+                    float: left;
+                }
+
+                #essayabout{
+                    float: right;
+                    width: 20%;
+                }
+                #sidenav{
+                    width: 20%;
+                    margin-left: 1%
+                }
+            }
+        </style>
+        <title>The Modest Proposal | EssayHub: The Free Essayclopedia</title>
+    </head>
+    <body>
+    <div id="header">
+        <div id="header-left" class="col-8">
+            <h1 style="display: inline">EssayHub</h1>
+            <p style="display: inline">the free essayclopedia</p>
+        </div>
+        <div id="header-right" class="col-4">
+            <h1 style="display: inline">Essays</h1>
+        </div>
+    </div>
+    <div id="navbar" class="col-12">
+        <table>
+            <tr>
+                <td class="home">
+                    <a href="index.html">Home</a>
+                </td>
+                <td class="essays">
+                    <a href="content.html">Essays</a>
+                </td>
+                <td class="other">
+                    <a href="other.html">Other</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="body">
+        <div id="sidenav" class="col-3">
+            <table>
+                <tbody>
+                <tr>
+                    <td style="background-color: white">
+                        <a href="content.html">
+                            <h1>Essay 1</h1>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="content2.html">
+                            <h1>Essay 2</h1>
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <a href="content3.html">
+                            <h1>Essay 3</h1>
+                        </a>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+        <div id="placeholder" class="col-3"></div>
+        <div id="essay" class="col-6">
+            <table>
+                <tr>
+                    <td>
+                        <h1><i>The</i> Modest Proposal</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="body">
+                        <p>Racial Discrimination has been a thing since forever, dating back to at least the colonization of America by the Europeans. The slave trade also existed during that time so things weren’t really going too well for the dark-skinned humans. Now how is this bad? Well first of all, they’re humans, like us. Discriminating them just because they have a darker skin color than you is going a bit too far on what is morally right. Many solutions have been thought of on how to solve this issue, and so, I present my own solution: Global Genocide.</p>
+                        <p>Now, you may be thinking, what good would the extinction of the human race do? A lot, actually. For example, it has been researched by scientists that, given a couple thousand years, life could actually flourish if there weren’t any humans around. In fact, it has been proven that modern-day human activities resulted in the extinction of a variety of plants and animals, dubbed the Holocene Extinction. This means that not only will the death of humankind solve some of our problems but also solve the problems of the wildlife around us.</p>
+                        <p>Now let’s actually go to how this would solve some of mankind’s problems. For our main case, Racial Discrimination, well, no one can discriminate someone else if they’re dead, that’s a fun fact for you there! What’s more, it also goes both ways, you can’t judge someone if there’s no one to judge. Now let’s go onto the applications of this solution to other world problems. Let’s start with the inspiration for this entire essay itself, A Modest Proposal. In the essay’s scenario, the residents of the country are suffering from poverty and hunger. Starting with poverty, let’s start by asking: What is poverty?  Poverty is defined as <i>“a state or condition in which a person or community lacks the financial resources and essentials for a minimum standard of living.”</i> Now how do we solve this? Simple, it says that a person who lacks the essentials for a <i>minimum standard of living</i> is in a state of poverty. My solution fixes this by ensuring that there is no one who can actually establish a standard of living. For hunger, and to some extent pretty much every problem in the world, you can use the sentence “There can’t be any problem if there’s no one to cause it.” (Hunger can’t exist if there’s no human who’s hungry in the first place and so on…)</p>
+                        <p>Now that you can see the benefits of this solution, let’s start discussing about how to actually perform the act. The plan takes inspiration from an actual real-world event (Stanislav Petrov and the Day the World Almost Ended). Essentially, it’s all about starting a war. So, let’s take the two countries that currently own the most nuclear warheads, Russia and the United States, pin them against each other, and hopefully start a WW3 of sorts. This can be done by setting up a large explosion in Russia (preferably Moscow or some other major Russian city) and framing the US for the attack (can also be done vice versa). How you’re going to get the explosives is up to you. You can hire a demolition expert or perhaps steal a nuclear warhead but there’s no guarantee that it will 100% work.</p>
+                        <p>Assuming you’ve actually managed to do it, what would happen next? Well give or take a couple thousand years after a mass extinction, Earth will actually continue on as if nothing ever happened. Sure, a lot of species died, but same events have happened before, 5 times to be exact, and as we can see now the Earth is still teeming with life. That fact is also the sad truth of our existence. The fact that we do bad things without considering their consequences. The fact that we don’t do anything about those consequences. The fact that those same consequences build up and lead to great disasters. The fact that all our problems are always caused by ourselves…</p>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="essayabout" class="col-3">
+            <div class="amorespecificname">
+                <h2 style="color: greenyellow; text-align: center">Fun Facts:</h2>
+                <p>- This essay's name was inspired by "A Modest Proposal" by Jonathan Smith.</p>
+                <br>
+                <p>- The concept of this essay was thought of about 3.5 years ago while I was in the shower.</p>
+                <br>
+                <p>- CompSci is a very cool subject.</p>
+                <br>
+                <p>- Contrary to popular belief, this essay is still not sponsored by Raid: Shadow Legends.</p>
+                <br>
+                <p>- Russia and the US by themselves have more nuclear warheads than anywhere else in the world combined.</p>
+                <br>
+                <p>- 90% of the time spent in making this html file was still spent researching how to fix problems.</p>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" class="col-4">Contact Us</a>
+        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" class="col-4">Share this Site</a>
+        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" class="col-4">More Info</a>
+    </div>
+    </body>
+</html>

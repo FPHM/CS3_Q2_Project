@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <style>
+        body{
+            font-family: 'Montserrat', serif;
+            background-color: #050505;
+            color: white;
+            margin: 0;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        #header{
+            color: black;
+            height: 39px;
+        }
+        #header-left{
+            background-color: aqua;
+            float: left;
+        }
+        #header-right{
+            background-color: rgba(0,255,255,0.25);
+            color: white;
+            float: left;
+            padding: 0 5px;
+        }
+        #header-right h1{
+            text-align: right;
+            margin: 0;
+            padding: 10px;
+            display: inline;
+        }
+        #navbar{
+            background-color: #111111;
+            border: 1px solid black;
+            margin-bottom: 10px;
+        }
+        #navbar td{
+            padding: 10px;
+            transition-duration: 0.2s;
+        }
+        #navbar td:hover{
+            background-color: aqua;
+        }
+        #navbar a{
+            height: 100%;
+        }
+        #body{
+            height: 500px;
+        }
+        #text{
+            color: white;
+            text-align: center;
+            line-height: 1.5;
+            background-color: rgba(0,255,255,0.25);
+            margin: 2% auto 0;
+            padding: 10px;
+            border: 1px solid aqua;
+            -moz-box-shadow: 0 0 50px aqua;
+            -webkit-box-shadow: 0 0 50px aqua;
+            box-shadow: 0 0 50px aqua;
+        }
+        #text h1{
+            margin-bottom: 10px;
+        }
+        #footerPlaceholder{
+            height: 90px;
+        }
+        #footer{
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: aqua;
+            text-align: center;
+            margin-top: 5px;
+        }
+        #footer a{
+            float: left;
+            padding: 5px;
+            transition-duration: 0.2s;
+        }
+        #footer a:hover{
+            background-color: black;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+        [class*="col-"] {
+            /* For mobile phones: */
+            width: 100%;
+        }
+        @media only screen and (min-width: 768px) {
+            /* For desktop: */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+            #mainpageimage{
+                display: block;
+            }
+            #footerPlaceholder{
+                display: none;
+            }
+        }
+        @media only screen and (max-width: 1000px) and (min-width: 769px) {
+            #text{
+                width: 75%;
+            }
+        }
+    </style>
+    <title>About | EssayHub: The Free Essayclopedia</title>
+</head>
+<body>
+    <div id="header">
+        <div id="header-left" class="col-8">
+            <h1 style="display: inline">EssayHub</h1>
+            <p style="display: inline">the free essayclopedia</p>
+        </div>
+        <div id="header-right" class="col-4">
+            <h1 style="display: inline">Other</h1>
+        </div>
+    </div>
+    <div id="navbar" class="col-12">
+        <table>
+            <tr>
+                <td class="home">
+                    <a href="index.html">Home</a>
+                </td>
+                <td class="essays">
+                    <a href="content.html">Essays</a>
+                </td>
+                <td class="other">
+                    <a href="other.html">Other</a>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div id="body">
+        <div id="text" class="col-6">
+            <h1>Credits:</h1>
+            <p>Author: Franz Patrick H. Magbitang</p>
+            <p>Teacher: Jan Michael R. Ibanez (hi sir)</p>
+            <p>Special Thanks to:</p>
+            <p><a href="https://www.w3schools.com/" style="text-decoration: underline; color: white">W3Schools</a></p>
+            <p><a href="https://css-tricks.com/" style="text-decoration: underline; color: white">CSS-Tricks</a></p>
+            <p>Wireframe: <a href="https://pencil.evolus.vn/" style="text-decoration: underline; color: white">Pencil</a></p>
+            <p>IDE: <a href="https://www.jetbrains.com/webstorm/" style="text-decoration: underline; color: white">WebStorm</a></p>
+        </div>
+    </div>
+    <div id="footerPlaceholder" class="col-12"></div>
+    <div id="footer">
+        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" class="col-4">Contact Us</a>
+        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" class="col-4">Share this Site</a>
+        <a href="https://www.youtube.com/watch?v=DLzxrzFCyOs" class="col-4">More Info</a>
+    </div>
+</body>
+</html>
